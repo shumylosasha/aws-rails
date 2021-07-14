@@ -3,10 +3,8 @@ lock "~> 3.14.0"
 require 'capistrano-db-tasks'
 
 set :application, 'aws-rails'
-#FIXME replace 'git@github.com:YOUR-GIT-REPO-HERE' with your git clone url
-set :repo_url, 'git@github.com:YOUR-GIT-REPO-HERE'
-#FIXME add location on the server here
-set :deploy_to, '/home/deploy/your-app'
+set :repo_url, 'git@github.com:shumylosasha/aws-rails.git'
+set :deploy_to, '/home/deploy/aws-rails'
 set :branch, ENV['BRANCH'] if ENV['BRANCH']
 
 set :linked_files, %w{config/database.yml config/master.key}
